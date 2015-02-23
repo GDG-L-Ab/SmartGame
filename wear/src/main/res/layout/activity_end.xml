@@ -1,0 +1,52 @@
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        app:layout_box="all">
+
+        <TextView
+            android:gravity="center"
+            android:layout_height="94dp"
+            android:layout_width="86dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            android:id="@+id/scoreValue"/>
+
+        <ImageButton
+            android:background="@null"
+            android:layout_gravity="bottom|left"
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:src="@drawable/v"
+            android:onClick="retry"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_height="94dp"
+            android:layout_width="69dp"
+            android:text="@string/score_label"
+            android:textColor="@color/black"
+            android:layout_gravity="right|top"
+            android:id="@+id/scoreLabel"
+            android:textSize="22dp"/>
+
+        <ImageButton
+            android:background="@null"
+            android:layout_gravity="bottom|right"
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:src="@drawable/x"
+            android:id="@+id/dismissBtn"
+            android:onClick="dismiss"/>
+
+    </FrameLayout>
+</android.support.wearable.view.BoxInsetLayout>
